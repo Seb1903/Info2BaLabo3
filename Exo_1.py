@@ -1,5 +1,5 @@
-def call(fonction, *args) : 
-    return fonction(*args)
+def call(fonction, *args, **kwargs) : 
+    return fonction(*args, **kwargs)
 
 
 def hello(): 
@@ -21,3 +21,4 @@ def compute(a, b, op = add) :  #Ici on crée un paramètre optionnel op en lui d
         return sub(a,b)
 
 print(compute(12,3, op=sub))
+print(call,compute(1222,33))
