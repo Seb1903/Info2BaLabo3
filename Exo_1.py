@@ -21,4 +21,4 @@ def compute(a, b, op = add) :  #Ici on crée un paramètre optionnel op en lui d
         return sub(a,b)
 
 print(compute(12,3, op=sub))
-print(call,compute(1222,33))
+print(call(compute,1222,33))
